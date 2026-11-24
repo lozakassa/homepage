@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta
+      name="description"
+      content="The personal website of Your Name, a scientist working in [field of study]."
+    >
+    <title>Your Name - Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="identity" href="#home-panel" data-open-tab="home" aria-label="Your Name, home">
+          <span class="identity-mark" aria-hidden="true">YN</span>
+          <span class="identity-copy">
+            <span class="identity-name">Your Name</span>
+            <span class="identity-role">Scientist &amp; curious human</span>
+          </span>
+        </a>
+
+        <nav class="tabs" role="tablist" aria-label="Main navigation">
+          <button id="home-tab" class="tab is-active" type="button" role="tab"
+            aria-selected="true" aria-controls="home-panel" tabindex="0">Home</button>
+          <button id="research-tab" class="tab" type="button" role="tab"
+            aria-selected="false" aria-controls="research-panel" tabindex="-1">Research</button>
+          <button id="publications-tab" class="tab" type="button" role="tab"
+            aria-selected="false" aria-controls="publications-panel" tabindex="-1">Publications</button>
+          <button id="teaching-tab" class="tab" type="button" role="tab"
+            aria-selected="false" aria-controls="teaching-panel" tabindex="-1">Teaching</button>
+          <button id="contact-tab" class="tab" type="button" role="tab"
+            aria-selected="false" aria-controls="contact-panel" tabindex="-1">Contact</button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home-panel" class="panel home-panel" role="tabpanel"
+          aria-labelledby="home-tab" tabindex="0">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Scientist in [field of study]</p>
+            <h1>Asking better questions about our world.</h1>
+            <p class="hero-intro">
+              Hello, I'm <strong>Your Name</strong>. I study [your research area] and
+              look for thoughtful ways to turn evidence into understanding.
+            </p>
+            <button class="text-link" type="button" data-open-tab="research">
+              A little about my work <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+          <div class="hero-art" aria-label="Decorative illustration of a planet and orbit">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="planet">
+              <span class="planet-shape"></span>
+              <span class="planet-shade"></span>
+            </div>
+            <span class="art-label label-top">OBSERVE</span>
+            <span class="art-label label-bottom">QUESTION / REPEAT</span>
+            <span class="art-spark spark-one" aria-hidden="true"></span>
+            <span class="art-spark spark-two" aria-hidden="true"></span>
+          </div>
+
+          <div class="home-note">
+            <span class="note-index">01 / A NOTE</span>
+            <p>This is a starting point. Replace the sample name, field, and copy with your own story.</p>
+            <span class="note-line" aria-hidden="true"></span>
+          </div>
+        </section>
+
+        <section id="research-panel" class="panel content-panel" role="tabpanel"
+          aria-labelledby="research-tab" tabindex="0" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">01 / Research</p>
+            <h1>Questions worth exploring.</h1>
+            <p class="section-intro">A short introduction to your work, the questions that guide it, and why they matter.</p>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <span class="card-number">01</span>
+              <h2>[Research theme one]</h2>
+              <p>Use a few sentences to describe a current project, its methods, and what you hope to learn.</p>
+              <span class="card-tag">[Method or topic]</span>
+            </article>
+            <article class="research-card">
+              <span class="card-number">02</span>
+              <h2>[Research theme two]</h2>
+              <p>Share another area of inquiry and explain how it connects to your broader research interests.</p>
+              <span class="card-tag">[Method or topic]</span>
+            </article>
+            <article class="research-card">
+              <span class="card-number">03</span>
+              <h2>[Research theme three]</h2>
+              <p>Highlight a collaboration, emerging question, or direction you are excited to pursue next.</p>
+              <span class="card-tag">[Method or topic]</span>
+            </article>
+          </div>
+          <p class="page-footnote">Currently based at [department, university, or research institute].</p>
+        </section>
+
+        <section id="publications-panel" class="panel content-panel" role="tabpanel"
+          aria-labelledby="publications-tab" tabindex="0" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">02 / Publications</p>
+            <h1>Selected writing &amp; work.</h1>
+            <p class="section-intro">A few publications and projects. Add links to papers, preprints, or datasets when ready.</p>
+          </div>
+          <ol class="publication-list">
+            <li class="publication">
+              <span class="publication-year">20XX</span>
+              <div>
+                <h2>[Publication title goes here]</h2>
+                <p>[Your Name], [Co-author Name]. <em>[Journal or publisher]</em>, [volume and pages].</p>
+                <span class="publication-link">DOI: [add link]</span>
+              </div>
+              <span class="publication-type">Journal article</span>
+            </li>
+            <li class="publication">
+              <span class="publication-year">20XX</span>
+              <div>
+                <h2>[Another publication title]</h2>
+                <p>[Your Name], [Co-author Name]. <em>[Journal or publisher]</em>, [volume and pages].</p>
+                <span class="publication-link">DOI: [add link]</span>
+              </div>
+              <span class="publication-type">Conference paper</span>
+            </li>
+            <li class="publication">
+              <span class="publication-year">20XX</span>
+              <div>
+                <h2>[A dataset, preprint, or other contribution]</h2>
+                <p>[Brief citation or a sentence about this work.]</p>
+                <span class="publication-link">View: [add link]</span>
+              </div>
+              <span class="publication-type">Other work</span>
+            </li>
+          </ol>
+        </section>
+
+        <section id="teaching-panel" class="panel content-panel" role="tabpanel"
+          aria-labelledby="teaching-tab" tabindex="0" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">03 / Teaching</p>
+            <h1>Learning is a shared practice.</h1>
+            <p class="section-intro">A place to share your teaching approach, courses, mentoring, and resources for students.</p>
+          </div>
+          <div class="teaching-layout">
+            <article class="teaching-statement">
+              <span class="card-number">APPROACH</span>
+              <h2>Make room for curiosity.</h2>
+              <p>
+                [Write a few lines about how you help students ask questions,
+                engage with evidence, and build confidence in their own thinking.]
+              </p>
+            </article>
+            <div class="course-list">
+              <h2>Courses &amp; mentoring</h2>
+              <article class="course-item">
+                <span class="course-term">[Term, Year]</span>
+                <div><h3>[Course title]</h3><p>[Short course description or level]</p></div>
+              </article>
+              <article class="course-item">
+                <span class="course-term">[Term, Year]</span>
+                <div><h3>[Course title]</h3><p>[Short course description or level]</p></div>
+              </article>
+              <article class="course-item">
+                <span class="course-term">ONGOING</span>
+                <div><h3>[Mentoring or outreach]</h3><p>[How you support learners beyond the classroom]</p></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-panel" class="panel content-panel contact-panel" role="tabpanel"
+          aria-labelledby="contact-tab" tabindex="0" hidden>
+          <div class="contact-copy">
+            <p class="eyebrow">04 / Contact</p>
+            <h1>Let's start a conversation.</h1>
+            <p class="section-intro">Questions, collaborations, and thoughtful notes are welcome.</p>
+            <a class="contact-email" href="mailto:name@example.com">name@example.com <span aria-hidden="true">&nearr;</span></a>
+          </div>
+          <aside class="contact-details">
+            <div>
+              <span class="detail-label">FIND ME AT</span>
+              <p>[Department]<br>[University or institute]<br>[City, Country]</p>
+            </div>
+            <div>
+              <span class="detail-label">ELSEWHERE</span>
+              <p>[LinkedIn] &nbsp; / &nbsp; [ORCID] &nbsp; / &nbsp; [Google Scholar]</p>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>&copy; <span id="current-year"></span> Your Name</span>
+        <span>Made with curiosity.</span>
+        <a href="#home-panel" data-open-tab="home">Back to home &uarr;</a>
+      </footer>
+    </div>
+  </body>
+</html>
